@@ -12,7 +12,7 @@ COPY src ./src
 COPY mcp_server.py ./
 
 # Install package with all dependencies
-RUN pip install --no-cache-dir -e .
+RUN pip install --no-cache-dir .
 
 # Create non-root user for security
 RUN useradd -m -u 1001 appuser
